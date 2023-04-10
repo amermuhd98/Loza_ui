@@ -257,8 +257,12 @@ class _ShopState extends State<Shop> {
                 ],
               ),
             ),
-            Divider(),
-       SizedBox(height: 30,),
+            Divider(
+              color: Colors.black,
+            ),
+            SizedBox(
+              height: 30,
+            ),
             Stack(
               alignment: Alignment.topRight,
               children: [
@@ -359,11 +363,161 @@ class _ShopState extends State<Shop> {
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Best Selling",
+                      style: TextStyle(fontSize: 20, color: Colors.black),
+                    ),
+                    SizedBox(
+                      width: 200,
+                    ),
+                    InkWell(
+                      onTap: () {},
+                      child: Text(
+                        "show all",
+                        style: TextStyle(fontSize: 18, color: Colors.black),
+                      ),
+                    ),
+                    InkWell(onTap: () {}, child: Icon(Icons.play_arrow)),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    height: h / 4.5,
+                    width: w / 2,
+                    child: Image.asset("images/sofa.jpg"),
+                  ),
+                  Text(
+                    "Ivonne chair, green",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  amer(
+                    color: Colors.black,
+                    title: 'SHOP',
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ),
+            Divider(
+              color: Colors.black,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    height: h / 4.5,
+                    width: w / 2,
+                    child: Image.asset("images/tables.jpg"),
+                  ),
+                  Text(
+                    "Ivonne chair, green",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  amer(
+                    color: Colors.black,
+                    title: 'SHOP',
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ),
+            Divider(
+              color: Colors.black,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    height: h / 4.5,
+                    width: w / 2,
+                    child: Image.asset("images/Categories.png"),
+                  ),
+                  Text(
+                    "Ivonne chair, green",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  amer(
+                    color: Colors.black,
+                    title: 'SHOP',
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Divider(
+              color: Colors.black,
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            // واخيرا صرت مبرمج تطبيقات موبايل
+
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Card(
+                child: Row(
+                  children: [
+                    Container(
+                      color: Color(0XFFF5F6F8),
+                      width: w / 1,
+                      height: h / 2,
+                      child: Image.asset("images/more.png"),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
-      
     );
   }
 }

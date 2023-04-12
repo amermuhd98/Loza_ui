@@ -17,48 +17,83 @@ class _ShopState extends State<Shop> {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xffF3F3F3),
-        iconTheme: IconThemeData(color: Colors.black),
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Container(
-              margin: EdgeInsets.only(),
-              child: IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  size: h / 25,
-                ),
-              ),
-            ),
-            InkWell(
-              onTap: () {},
-              child: Image.asset(
-                "icons/shop.png",
-                width: MediaQuery.of(context).size.width / 9,
-              ),
-            ),
-          ],
-        ),
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Color(0xffF3F3F3),
+      //   iconTheme: IconThemeData(color: Colors.black),
+      //   title: Row(
+      //     mainAxisAlignment: MainAxisAlignment.end,
+      //     children: [
+      //       Container(
+      //         margin: EdgeInsets.only(),
+      //         child: IconButton(
+      //           onPressed: () {},
+      //           icon: Icon(
+      //             Icons.search,
+      //             size: h / 25,
+      //           ),
+      //         ),
+      //       ),
+      //       InkWell(
+      //         onTap: () {},
+      //         child: Image.asset(
+      //           "icons/shop.png",
+      //           width: MediaQuery.of(context).size.width / 9,
+      //         ),
+      //       ),
+      //     ],
+      //   ),
+      // ),
+      // drawer: Drawer(),
       drawer: Drawer(),
+
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 30, top: 30),
-              child: Text(
-                "Discover",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.w400),
+              padding: const EdgeInsets.only(left: 15, top: 40),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(
+                      onPressed: () {
+                        Drawer();
+                      },
+                      icon: Icon(Icons.menu)),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 225),
+                    child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.search,
+                          size: h / 29,
+                        )),
+                  ),
+                  Image.asset(
+                    "icons/shop.png",
+                    height: 30,
+                  ),
+                ],
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 15,
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    "Discover",
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w400),
+                  ),
+                ],
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 2,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,

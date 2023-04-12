@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loza_ui/models/forget.dart';
 import 'package:loza_ui/models/onbording.dart';
+import 'package:loza_ui/models/shop_screen.dart';
 import 'package:loza_ui/models/sign_in.dart';
 
 import '../widget/my.dart';
@@ -104,7 +105,9 @@ class _LoginState extends State<Login> {
                       MyButton(
                         color: Colors.black,
                         title: 'LOGIN',
-                        onPressed: () {},
+                        onPressed: () {
+                           Navigator.pushNamed(context, Shop.screenRoute);
+                        },
                       ),
                       SizedBox(
                         height: 15,

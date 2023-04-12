@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loza_ui/models/forget.dart';
 import 'package:loza_ui/models/login_screen.dart';
+import 'package:loza_ui/models/shop_screen.dart';
 
 import '../widget/my.dart';
 
@@ -120,7 +121,9 @@ class _SignState extends State<Sign> {
                       MyButton(
                         color: Colors.black,
                         title: 'SIGN UP',
-                        onPressed: () {},
+                        onPressed: () {
+                            Navigator.pushNamed(context, Shop.screenRoute);
+                        },
                       ),
                       SizedBox(
                         height: 15,

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         // home:Forget(),
-        initialRoute: Shop.screenRoute,
+        initialRoute: Onbor.screenRoute,
         routes: {
           Shop.screenRoute: (context) => Shop(),
           Onbor.screenRoute: (context) => Onbor(),

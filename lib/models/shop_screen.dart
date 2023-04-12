@@ -70,6 +70,7 @@ class _ShopState extends State<Shop> {
                       children: [
                         Container(
                           child: Image.asset(
+                            // color: Colors.grey,
                             "images/Categories.png",
                             width: MediaQuery.of(context).size.width / 3,
                           ),
@@ -169,7 +170,7 @@ class _ShopState extends State<Shop> {
               child: Row(
                 children: [
                   Container(
-                    height: h / 4.5,
+                    height: h / 7,
                     width: w / 2,
                     child: Image.asset("images/sofa.jpg"),
                   ),
@@ -202,7 +203,7 @@ class _ShopState extends State<Shop> {
               child: Row(
                 children: [
                   Container(
-                    height: h / 4.5,
+                    height: h / 7,
                     width: w / 2,
                     child: Image.asset("images/tables.jpg"),
                   ),
@@ -235,7 +236,7 @@ class _ShopState extends State<Shop> {
               child: Row(
                 children: [
                   Container(
-                    height: h / 4.5,
+                    height: h / 7,
                     width: w / 2,
                     child: Image.asset("images/Categories.png"),
                   ),
@@ -351,7 +352,7 @@ class _ShopState extends State<Shop> {
                                         child: Icon(Icons.play_arrow,
                                             size: 20, color: Colors.black),
                                       ),
-                                    )
+                                    ),
                                   ],
                                 ),
                               ],
@@ -502,16 +503,19 @@ class _ShopState extends State<Shop> {
 
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Card(
-                child: Row(
-                  children: [
-                    Container(
-                      color: Color(0XFFF5F6F8),
-                      width: w / 1,
-                      height: h / 2,
-                      child: Image.asset("images/more.png"),
-                    ),
-                  ],
+              physics: ScrollPhysics(),
+              child: Container(
+                child: Card(
+                  child: Row(
+                    children: [
+                      Container(
+                        color: Color(0XFFF5F6F8),
+                        width: w / 1,
+                        height: h / 2,
+                        child: Image.asset("images/more.png"),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

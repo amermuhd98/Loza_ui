@@ -70,7 +70,6 @@ class _ShopState extends State<Shop> {
                       children: [
                         Container(
                           child: Image.asset(
-                            // color: Colors.grey,
                             "images/Categories.png",
                             width: MediaQuery.of(context).size.width / 3,
                           ),
@@ -139,7 +138,7 @@ class _ShopState extends State<Shop> {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Padding(
-                padding: const EdgeInsets.only(left: 25),
+                padding: const EdgeInsets.only(left: 4),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -165,32 +164,30 @@ class _ShopState extends State<Shop> {
             SizedBox(
               height: 20,
             ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Container(
-                    height: h / 7,
-                    width: w / 2,
-                    child: Image.asset("images/sofa.jpg"),
-                  ),
-                  Text(
-                    "Ivonne chair, green",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  amer(
-                    color: Colors.black,
-                    title: 'SHOP',
-                    onPressed: () {},
-                  ),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: h / 7,
+                  width: w / 5,
+                  child: Image.asset("images/Items 1.png"),
+                ),
+                Text(
+                  "Ivonne chair, green",
+                  style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                amer(
+                  color: Colors.black,
+                  title: 'SHOP',
+                  onPressed: () {},
+                ),
+              ],
             ),
             Divider(
               color: Colors.black,
@@ -198,32 +195,30 @@ class _ShopState extends State<Shop> {
             SizedBox(
               height: 20,
             ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Container(
-                    height: h / 7,
-                    width: w / 2,
-                    child: Image.asset("images/tables.jpg"),
-                  ),
-                  Text(
-                    "Ivonne chair, green",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  amer(
-                    color: Colors.black,
-                    title: 'SHOP',
-                    onPressed: () {},
-                  ),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: h / 7,
+                  width: w / 5,
+                  child: Image.asset("images/Items 1 Copy.png"),
+                ),
+                Text(
+                  "Snakeskin Pattern",
+                  style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                amer(
+                  color: Colors.black,
+                  title: 'SHOP',
+                  onPressed: () {},
+                ),
+              ],
             ),
             Divider(
               color: Colors.black,
@@ -231,32 +226,30 @@ class _ShopState extends State<Shop> {
             SizedBox(
               height: 20,
             ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Container(
-                    height: h / 7,
-                    width: w / 2,
-                    child: Image.asset("images/Categories.png"),
-                  ),
-                  Text(
-                    "Ivonne chair, green",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  amer(
-                    color: Colors.black,
-                    title: 'SHOP',
-                    onPressed: () {},
-                  ),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: h / 7,
+                  width: w / 5,
+                  child: Image.asset("images/Items 1 Copy 2.png"),
+                ),
+                Text(
+                  "Armchair Konna green",
+                  style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                amer(
+                  color: Colors.black,
+                  title: 'SHOP',
+                  onPressed: () {},
+                ),
+              ],
             ),
             Divider(
               color: Colors.black,
@@ -294,7 +287,7 @@ class _ShopState extends State<Shop> {
                                 "images/slide1.png",
                               ),
                             ),
-                            borderRadius: BorderRadius.circular(20.0),
+                            borderRadius: BorderRadius.circular(10),
                           ),
                         ),
                       ),
@@ -371,7 +364,7 @@ class _ShopState extends State<Shop> {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Padding(
-                padding: const EdgeInsets.only(left: 25),
+                padding: const EdgeInsets.only(left: 4),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -380,7 +373,7 @@ class _ShopState extends State<Shop> {
                       style: TextStyle(fontSize: 20, color: Colors.black),
                     ),
                     SizedBox(
-                      width: 200,
+                      width: 189,
                     ),
                     InkWell(
                       onTap: () {},
@@ -397,32 +390,30 @@ class _ShopState extends State<Shop> {
             SizedBox(
               height: 20,
             ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Container(
-                    height: h / 4.5,
-                    width: w / 2,
-                    child: Image.asset("images/sofa.jpg"),
-                  ),
-                  Text(
-                    "Ivonne chair, green",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  amer(
-                    color: Colors.black,
-                    title: 'SHOP',
-                    onPressed: () {},
-                  ),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: h / 7,
+                  width: w / 5,
+                  child: Image.asset("images/ke.png"),
+                ),
+                Text(
+                  "Ruffle Trim ",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                amer(
+                  color: Colors.black,
+                  title: 'SHOP',
+                  onPressed: () {},
+                ),
+              ],
             ),
             Divider(
               color: Colors.black,
@@ -430,32 +421,30 @@ class _ShopState extends State<Shop> {
             SizedBox(
               height: 20,
             ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Container(
-                    height: h / 4.5,
-                    width: w / 2,
-                    child: Image.asset("images/tables.jpg"),
-                  ),
-                  Text(
-                    "Ivonne chair, green",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  amer(
-                    color: Colors.black,
-                    title: 'SHOP',
-                    onPressed: () {},
-                  ),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: h / 7,
+                  width: w / 5,
+                  child: Image.asset("images/krs.png"),
+                ),
+                Text(
+                  "Floral Print Random",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                amer(
+                  color: Colors.black,
+                  title: 'SHOP',
+                  onPressed: () {},
+                ),
+              ],
             ),
             Divider(
               color: Colors.black,
@@ -463,35 +452,30 @@ class _ShopState extends State<Shop> {
             SizedBox(
               height: 20,
             ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Container(
-                    height: h / 4.5,
-                    width: w / 2,
-                    child: Image.asset("images/Categories.png"),
-                  ),
-                  Text(
-                    "Ivonne chair, green",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  amer(
-                    color: Colors.black,
-                    title: 'SHOP',
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 30,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: h / 7,
+                  width: w / 5,
+                  child: Image.asset("images/kkrsi.png"),
+                ),
+                Text(
+                  "Geo Pattern",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                amer(
+                  color: Colors.black,
+                  title: 'SHOP',
+                  onPressed: () {},
+                ),
+              ],
             ),
             Divider(
               color: Colors.black,

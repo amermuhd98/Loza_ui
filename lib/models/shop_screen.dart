@@ -508,7 +508,9 @@ class _ShopState extends State<Shop> {
                   amer(
                     color: Colors.black,
                     title: 'SHOP',
-                    onPressed: () {},
+                    onPressed: () {
+                      print("object");
+                    },
                   ),
                 ],
               ),
@@ -520,21 +522,17 @@ class _ShopState extends State<Shop> {
               ),
               // واخيرا صرت مبرمج تطبيقات موبايل
 
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                physics: ScrollPhysics(),
-                child: Container(
-                  child: Card(
-                    child: Row(
-                      children: [
-                        Container(
-                          color: Color(0XFFF5F6F8),
-                          width: w / 1,
-                          height: h / 2,
-                          child: Image.asset("images/more.png"),
-                        ),
-                      ],
-                    ),
+              Container(
+                child: Card(
+                  child: Row(
+                    children: [
+                      Container(
+                        color: Color(0XFFF5F6F8),
+                        width: w / 1.1 + 20,
+                        height: h / 2,
+                        child: Image.asset("images/more.png"),
+                      ),
+                    ],
                   ),
                 ),
               ),

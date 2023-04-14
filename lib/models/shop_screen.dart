@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -172,33 +173,34 @@ class _ShopState extends State<Shop> {
               SizedBox(
                 height: 20,
               ),
-              SingleChildScrollView(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      height: h / 7,
-                      width: w / 5,
-                      child: Image.asset("images/Items 1.png"),
-                    ),
-                    Text(
-                      "Ivonne chair, green",
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: h / 7,
+                    width: w / 5,
+                    child: Image.asset("images/Items 1.png"),
+                  ),
+                  SizedBox(
+                    width: 200,
+                    child: AutoSizeText(
+                      "Ivonne chair, green\n \$29",
+                      maxLines: 3,
                       style: TextStyle(
                           fontSize: 19,
                           color: Colors.black,
                           fontWeight: FontWeight.w400),
                     ),
-                    
-                    SizedBox(
-                      width: 20,
-                    ),
-                    amer(
-                      color: Colors.black,
-                      title: 'SHOP',
-                      onPressed: () {},
-                    ),
-                  ],
-                ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  amer(
+                    color: Colors.black,
+                    title: 'SHOP',
+                    onPressed: () {},
+                  ),
+                ],
               ),
               Divider(
                 color: Colors.black,
@@ -214,12 +216,16 @@ class _ShopState extends State<Shop> {
                     width: w / 5,
                     child: Image.asset("images/Items 1 Copy.png"),
                   ),
-                  Text(
-                    "Snakeskin Pattern",
-                    style: TextStyle(
-                        fontSize: 19,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
+                  SizedBox(
+                    width: 200,
+                    child: AutoSizeText(
+                      "Snakeskin Pattern Buckle\n \$29",
+                      maxLines: 3,
+                      style: TextStyle(
+                          fontSize: 19,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ),
                   SizedBox(
                     width: 20,
@@ -245,12 +251,16 @@ class _ShopState extends State<Shop> {
                     width: w / 5,
                     child: Image.asset("images/Items 1 Copy 2.png"),
                   ),
-                  Text(
-                    "Armchair Konna green",
-                    style: TextStyle(
-                        fontSize: 19,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
+                  SizedBox(
+                    width: 200,
+                    child: AutoSizeText(
+                      "Armchair Konna green\n \$29",
+                      maxLines: 3,
+                      style: TextStyle(
+                          fontSize: 19,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ),
                   SizedBox(
                     width: 20,
@@ -336,7 +346,7 @@ class _ShopState extends State<Shop> {
                                     children: [
                                       InkWell(
                                         onTap: () {},
-                                        child: Text(
+                                        child: AutoSizeText(
                                           "SHOP NOW",
                                           style: TextStyle(
                                             fontWeight: FontWeight.w400,
@@ -411,12 +421,16 @@ class _ShopState extends State<Shop> {
                     width: w / 5,
                     child: Image.asset("images/ke.png"),
                   ),
-                  Text(
-                    "Ruffle Trim ",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
+                  SizedBox(
+                    width: 200,
+                    child: AutoSizeText(
+                      "Ruffle Trim Spot Wrap Dress\n \$29",
+                      maxLines: 3,
+                      style: TextStyle(
+                          fontSize: 19,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ),
                   SizedBox(
                     width: 20,
@@ -442,12 +456,16 @@ class _ShopState extends State<Shop> {
                     width: w / 5,
                     child: Image.asset("images/krs.png"),
                   ),
-                  Text(
-                    "Floral Print Random",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
+                  SizedBox(
+                    width: 200,
+                    child: AutoSizeText(
+                      "Leaf Floral Print Random\n \$29",
+                      maxLines: 3,
+                      style: TextStyle(
+                          fontSize: 19,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ),
                   SizedBox(
                     width: 20,
@@ -473,12 +491,16 @@ class _ShopState extends State<Shop> {
                     width: w / 5,
                     child: Image.asset("images/kkrsi.png"),
                   ),
-                  Text(
-                    "Geo Pattern",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
+                  SizedBox(
+                    width: 200,
+                    child: AutoSizeText(
+                      "Drop Shoulder Geo Pattern\n \$29",
+                      maxLines: 3,
+                      style: TextStyle(
+                          fontSize: 19,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ),
                   SizedBox(
                     width: 20,

@@ -104,7 +104,7 @@ class amer extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Material(
-        elevation: 0,
+        elevation: 2,
         color: color,
         borderRadius: BorderRadius.circular(1),
         child: MaterialButton(

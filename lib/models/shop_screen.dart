@@ -522,18 +522,21 @@ class _ShopState extends State<Shop> {
               ),
               // واخيرا صرت مبرمج تطبيقات موبايل
 
-              Container(
-                child: Card(
-                  child: Row(
-                    children: [
-                      Container(
+              Padding(
+                padding: const EdgeInsets.only(left: 30, right: 30),
+                child: Stack(
+                  children: [
+                    
+                    Card(
+                      elevation: 15,
+                      child: Container(
                         color: Color(0XFFF5F6F8),
-                        width: w / 1.1 + 20,
+                        width: w / 1.1,
                         height: h / 2,
                         child: Image.asset("images/more.png"),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ],

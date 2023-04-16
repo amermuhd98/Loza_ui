@@ -1,6 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:loza_ui/models/page_9.dart';
+import 'package:loza_ui/myAcount/_MyAcount.dart';
 
 import '../widget/my.dart';
 
@@ -18,7 +20,7 @@ class _ShopState extends State<Shop> {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
     return Scaffold(
-        drawer: Drawer(),
+       
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
@@ -32,7 +34,8 @@ class _ShopState extends State<Shop> {
                   children: [
                     IconButton(
                         onPressed: () {
-                          Drawer();
+                        Navigator.pushNamed(
+                                      context, myAcount.screenRoute);
                         },
                         icon: Icon(Icons.menu)),
                     Padding(

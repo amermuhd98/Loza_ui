@@ -656,18 +656,28 @@ final List _CardC = [
               // rival card text
               Container(
                   alignment: Alignment.centerRight,
-                  margin: EdgeInsets.only(top: 80, right: 78),
+                  margin: EdgeInsets.only(top: 83, right: 78),
                   padding: EdgeInsets.all(12),
-                  child: AutoSizeText(
-                    "SHOP NOW",
-                    style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400),
+                  child: InkWell(
+                    onTap: () {
+                      
+                    },
+                    child: AutoSizeText(
+                      "SHOP NOW",
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w400),
+                    ),
                   )),
+               
            Padding(
-             padding: const EdgeInsets.only(top: 185, left: 260),
-             child: IconButton(onPressed: (){}, icon: Icon(Icons.play_arrow)),
+             padding: const EdgeInsets.only(top: 181, left: 260),
+             child: IconButton(onPressed: (){}, icon: InkWell(
+              onTap: () {
+                
+              },
+              child: Icon(Icons.play_arrow))),
            )
            
               // click card text

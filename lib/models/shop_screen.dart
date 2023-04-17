@@ -17,101 +17,100 @@ class Shop extends StatefulWidget {
 class _ShopState extends State<Shop> {
   @override
   Widget build(BuildContext context) {
-   //  example list
-final List _CardC = [
-  [
-    // image card
-    'images/Items 1.png',
-    // title card
-    'Black Fridays',
-    // subtitle card
-    'New Arrivals Winter',
-    // rival yes / no
-    '',
-    // click
-    'SHOP NOW',
-  ],
-  [
-    // image card
-    'images/Items 1.png',
-    // title card
-    'Black Fridays',
-    // subtitle card
-    'New Arrivals Winter',
-    // rival yes / no
-    '50 % Off',
-    // click
-    'SHOP NOW',
-  ],
-  [
-    // image card
-    'images/Items 1.png',
-    // title card
-    'Black Fridays',
-    // subtitle card
-    'New Arrivals Winter',
-    // rival yes / no
-    '',
-    // click
-    'SHOP NOW',
-  ],
-  [
-    // image card
-    'images/Items 1.png',
-    // title card
-    'Black Fridays',
-    // subtitle card
-    'New Arrivals Winter',
-    // rival yes / no
-    '50 % Off',
-    // click
-    'SHOP NOW',
-  ],
-  [
-    // image card
-    'images/Items 1.png',
-    // title card
-    'Black Fridays',
-    // subtitle card
-    'New Arrivals Winter',
-    // rival yes / no
-    '50 % Off',
-    // click
-    'Shop Now', '',
-    'Black Fridays',
-    'New Arrivals Winter',
-    'SHOP NOW',
-  ],
-  [
-    // image card
-    'images/Items 1.png',
-    // title card
-    'Black Fridays',
-    // subtitle card
-    'New Arrivals Winter',
-    // rival yes / no
-    '50 % Off',
-    // click
-    'SHOP NOW',
-  ],
-  [
-    // image card
-    'images/Items 1.png',
-    // title card
-    'Black Fridays',
-    // subtitle card
-    'New Arrivals Winter',
-    // rival yes / no
-    '50 % Off',
-    // click
-    'SHOP NOW',
-  ],
-];
+    //  example list
+    final List _CardC = [
+      [
+        // image card
+        'images/Items 1.png',
+        // title card
+        'Black Fridays',
+        // subtitle card
+        'New Arrivals Winter',
+        // rival yes / no
+        '',
+        // click
+        'SHOP NOW',
+      ],
+      [
+        // image card
+        'images/Items 1.png',
+        // title card
+        'Black Fridays',
+        // subtitle card
+        'New Arrivals Winter',
+        // rival yes / no
+        '50 % Off',
+        // click
+        'SHOP NOW',
+      ],
+      [
+        // image card
+        'images/Items 1.png',
+        // title card
+        'Black Fridays',
+        // subtitle card
+        'New Arrivals Winter',
+        // rival yes / no
+        '',
+        // click
+        'SHOP NOW',
+      ],
+      [
+        // image card
+        'images/Items 1.png',
+        // title card
+        'Black Fridays',
+        // subtitle card
+        'New Arrivals Winter',
+        // rival yes / no
+        '50 % Off',
+        // click
+        'SHOP NOW',
+      ],
+      [
+        // image card
+        'images/Items 1.png',
+        // title card
+        'Black Fridays',
+        // subtitle card
+        'New Arrivals Winter',
+        // rival yes / no
+        '50 % Off',
+        // click
+        'Shop Now', '',
+        'Black Fridays',
+        'New Arrivals Winter',
+        'SHOP NOW',
+      ],
+      [
+        // image card
+        'images/Items 1.png',
+        // title card
+        'Black Fridays',
+        // subtitle card
+        'New Arrivals Winter',
+        // rival yes / no
+        '50 % Off',
+        // click
+        'SHOP NOW',
+      ],
+      [
+        // image card
+        'images/Items 1.png',
+        // title card
+        'Black Fridays',
+        // subtitle card
+        'New Arrivals Winter',
+        // rival yes / no
+        '50 % Off',
+        // click
+        'SHOP NOW',
+      ],
+    ];
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
     return Scaffold(
         body: SingleChildScrollView(
-          
       scrollDirection: Axis.vertical,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -603,89 +602,95 @@ final List _CardC = [
           ),
           // واخيرا صرت مبرمج تطبيقات موبايل
           Container(
-          margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-          decoration: BoxDecoration(
-              color: Colors.grey[100],
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey,
-                  offset: Offset(0, 6),
-                  blurRadius: 14,
-                  spreadRadius: 0,
-                ),
-                BoxShadow(
-                  color: Colors.grey,
-                  offset: Offset(0, 0),
-                )
-              ]),
-          // الارتفاع
-          height: h/2.4,
-          width: w/1,
-          child: Stack(
-            children: [
-              // images container
-              Container(
-                  padding: EdgeInsets.only(top: 0, ),
-                  // alignment: Alignment.topLeft,
-                  // الصورة
-                  child: Image.asset("images/krs.png", width: w/3, height: h/1,)),
-              // title card text
-              Container(
-                  alignment: Alignment.topRight,
-                  padding: EdgeInsets.only(top: 40, right: 30),
-                  child: AutoSizeText("Black Fridays", style: TextStyle(fontSize: 20),)),
-              // subtitle card text
-              Container(
-                  alignment: Alignment.topRight,
-                  margin: EdgeInsets.only(top: 100, bottom: 4),
-                  padding: EdgeInsets.all(12),
-                  child: SizedBox(
-                    width: 200,
-                    
-                    child: AutoSizeText(
-                    
-                      "SALE UP TO \n70% OFF",
-                      maxLines: 3,
-                      style: TextStyle(
-                          fontSize: 26,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w400),
+              margin: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+              decoration: BoxDecoration(
+                  color: Colors.grey[100],
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0, 6),
+                      blurRadius: 14,
+                      spreadRadius: 0,
                     ),
-                  )),
-              // rival card text
-              Container(
-                  alignment: Alignment.centerRight,
-                  margin: EdgeInsets.only(top: 83, right: 78),
-                  padding: EdgeInsets.all(12),
-                  child: InkWell(
-                    onTap: () {
-                      
-                    },
-                    child: AutoSizeText(
-                      "SHOP NOW",
-                      style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w400),
-                    ),
-                  )),
-               
-           Padding(
-             padding: const EdgeInsets.only(top: 181, left: 260),
-             child: IconButton(onPressed: (){}, icon: InkWell(
-              onTap: () {
-                
-              },
-              child: Icon(Icons.play_arrow))),
-           )
-           
-              // click card text
-              
-            ],
-          )),
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0, 0),
+                    )
+                  ]),
+              // الارتفاع
+              height: h / 2.4,
+              width: w / 1,
+              child: Stack(
+                children: [
+                  // images container
+                  Container(
+                      padding: EdgeInsets.only(bottom: 40),
+                      alignment: Alignment.bottomCenter,
+                      // الصورة
+                      child: Image.asset(
+                        "images/more.png",
+                        fit: BoxFit.cover,
+                        width: w / 1,
+                        height: h / 3.2,
+                      )),
+                  // title card text
+                  Container(
+                      alignment: Alignment.topRight,
+                      padding: EdgeInsets.only(top: 40, right: 30),
+                      child: AutoSizeText(
+                        "Black Fridays",
+                        style: TextStyle(fontSize: 20),
+                      )),
+                  // subtitle card text
+                  Container(
+                      alignment: Alignment.topRight,
+                      margin: EdgeInsets.only(top: 100, left: 180),
+                      padding: EdgeInsets.all(12),
+                      child: SizedBox(
+                        width: 200,
+                        child: AutoSizeText(
+                          "SALE UP TO \n70% OFF",
+                          maxLines: 3,
+                          style: TextStyle(
+                              fontSize: 26,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w400),
+                        ),
+                      )),
 
+                  // rival card text
+                  Container(
+                      alignment: Alignment.centerRight,
+                      margin: EdgeInsets.only(top: 150, right: 70),
+                      // padding: EdgeInsets.all(12),
+                      child: InkWell(
+                        onTap: () {},
+                        child: AutoSizeText(
+                          "SHOP NOW",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.grey[400],
+                              fontWeight: FontWeight.w400),
+                        ),
+                      )),
+                   
 
+                  Padding(
+                    padding: const EdgeInsets.only(top: 212, left: 278),
+                    child: IconButton(
+                        onPressed: () {},
+                        icon: InkWell(
+                            onTap: () {}, child: Icon(Icons.play_arrow, color: Colors.grey,))),
+                            
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 240, left: 180, ),
+                    child: Divider(color: Colors.black54, endIndent: 33,),
+                  ),
+                  // click card text
+                ],
+              )),
         ],
       ),
     ));

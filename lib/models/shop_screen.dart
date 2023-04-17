@@ -661,34 +661,22 @@ class _ShopState extends State<Shop> {
 
                   // rival card text
                   Container(
-                      alignment: Alignment.centerRight,
-                      margin: EdgeInsets.only(top: 150, right: 70),
-                      // padding: EdgeInsets.all(12),
+                      alignment: Alignment.bottomRight,
+                      // margin: EdgeInsets.only(top: 158, right: 80),
+                      padding: EdgeInsets.only(right: 44, bottom: 44),
                       child: InkWell(
                         onTap: () {},
                         child: AutoSizeText(
                           "SHOP NOW",
                           style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 15,
                               color: Colors.grey[400],
                               fontWeight: FontWeight.w400),
                         ),
                       )),
-                   
+                  
 
-                  Padding(
-                    padding: const EdgeInsets.only(top: 212, left: 278),
-                    child: IconButton(
-                        onPressed: () {},
-                        icon: InkWell(
-                            onTap: () {}, child: Icon(Icons.play_arrow, color: Colors.grey,))),
-                            
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 240, left: 180, ),
-                    child: Divider(color: Colors.black54, endIndent: 33,),
-                  ),
-                  // click card text
+
                 ],
               )),
         ],
